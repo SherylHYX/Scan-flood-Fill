@@ -12,8 +12,20 @@ def mae_details(gtPath, scanPath, efciPath):
     height, width = gt.shape[:2]
     scan = cv2.imread(scanPath, 0)
     efci = cv2.imread(efciPath, 0)
-    scan_diff = scan - gt
-    efci_diff = efci - gt
+    scan_diff = np.zeros([height,width])
+    efci_diff = np.zeros([height,width])
+    for x in range(height):
+        for y in range(width):
+            if gt[x, y] > 200:
+                if scan[x, y] < 50:
+                    scan_diff[x,y] = -1
+                if efci[x, y] < 50:
+                    efci_diff[x,y] = -1
+            if gt[x, y] < 50:
+                if scan[x, y] > 200:
+                    scan_diff[x, y] = 1
+                if efci[x, y] > 200:
+                    efci_diff[x, y] = 1
     num_of_elements = height * width
     efci_mae = 1.0*np.count_nonzero(efci_diff)/ num_of_elements
     scan_mae = 1.0*np.count_nonzero(scan_diff)/ num_of_elements
