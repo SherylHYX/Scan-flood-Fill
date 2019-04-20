@@ -7,6 +7,7 @@ Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 <p align="center">
   <img src="images/Comparison.jpg" width="350" title="hover text">
   <img src="images/Comparison.jpg" width="350" alt="accessibility text">
+  <img src="images/Comparison.jpg" width="350" alt="accessibility text">
 </p>
 
 ### 1 Requirements
