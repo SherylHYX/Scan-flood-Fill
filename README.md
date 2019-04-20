@@ -2,8 +2,6 @@
 
 Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 
-![Alt text](images/Comparison.jpg?raw=true "Title")
-
 <p align="center">
   <img src="images/Comparison.jpg" width="350" title="hover text">
   <img src="images/Comparison.jpg" width="350" alt="accessibility text">
@@ -46,6 +44,10 @@ Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 ​	We generate different sizes of input images by dilation of eight 200 x 200 basic images. The dilation code is Scan-flood-Fill/data/toy_examples/dilation.py, with input Scan-flood-Fill/data/toy_examples/input_200, and output is Scan-flood-Fill/data/toy_examples/output_toy.
 
 ​	We record time consumption for both EFCI and Scan-flood Fill and output corresponding .csv files. The corresponding codes are Scan-flood-Fill/filling_algorithms/EFCI_time_size.py and Scan-flood-Fill/filling_algorithms/Scan_flood_fill_time_size.py. The file Scan-flood-Fill/filling_algorithms/Scan_flood_fill_time_size_crop_first.py is the algorithm for Scan-flood-Fill, but it does cropping before the Main Filling Process. The resulting .csv files recording running time are EFCI_time_size.csv and Scan_flood_Fill_time_size.csv. The resulting masks are Scan-flood-Fill/data/toy_examples/output_EFCI_toy and Scan-flood-Fill/data/toy_examples/output_Scan_flood_Fill_toy(Scan-flood-Fill/data/toy_examples/output_Scan_flood_Fill_crop_first_toy for the cropping before Main Filling Process version).
+
+ 	A visual result for toy examples is given in the following figure.
+
+![Alt text](images/Comparison.jpg?raw=true "Title")
 
 ​	EFCI code is given below:
 ```python
@@ -244,12 +246,21 @@ def holeFill_main():
 
 ​	To illustrate the process clearly, we generate some flow charts. For EFCI, we use input Scan-flood-Fill/flow_chart/multi_input and code Scan-flood-Fill/flow_chart/EFCI_flowchart.py to obtain output Scan-flood-Fill/flow_chart/multi_output. Similarly, for Scan-flood Fill, we use input Scan-flood-Fill/flow_chart/pig_input and code Scan-flood-Fill/data/toy_examples/Scan_flood_fill_flowchart.py to obtain output Scan-flood-Fill/flow_chart/pig_output.
 
-​	Flowcharts generated can be seen in paper Scan-flood-Fill/56.pdf.
+​	Flowcharts generated can be seen in paper Scan-flood-Fill/56.pdf, and they are also presented here.
 
+![Alt text](images/flow_EFCI0413.png?raw=true "Title")
+*flow chart for EFCI*
+
+![Alt text](images/flow_pig0417.png?raw=true "Title")
+*flow chart for Scan-flood Fill*
 
 ### 6 Practical experiments
 
 ​	We test Scan-flood Fill Algorithm as well as its basic version(EFCI) on 9,918 out of 10,000 images from MSRA10K, where edges are relatively easy to be extracted from masks(since this dataset does not provide edge information). The corresponding generating code is Scan-flood-Fill/filling_algorithms/mask2edge.py. Starting from an image with "only" boundary pixels (i.e. masks not yet generated), Scan-flood Fill can generate corresponding masks effectively. To be comparable with ground truth masks given by MSRA10K, we set mask color to be boundary color, i.e., pixel value 255 in our case.
+
+​	An example for the practical result is given here.
+
+![Alt text](images/combination of practical.jpg?raw=true "Title")
 
 ​	First we draw some examples for result image in our paper.  For EFCI, we use input Scan-flood-Fill/data/practical_experiment/boundary and code Scan-flood-Fill/filling_algorithms/EFCI_practical_experiment.py to obtain output Scan-flood-Fill/data/practical_experiment/output_EFCI. Similarly, for Scan-flood Fill, we use input Scan-flood-Fill/data/practical_experiment/boundary and code Scan-flood-Fill/filling_algorithms/Scan_flood_fill_practical_experiment.py to obtain output Scan-flood-Fill/data/practical_experiment/output_scan.
 
