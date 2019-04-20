@@ -88,7 +88,7 @@ def holeFill_main():
         print(elapsed)
         fill_time[i] = elapsed
     print(fill_time)
-    np.savetxt("scan_flood_Fill_time_size.csv", fill_time, delimiter=",")
+    np.savetxt("Scan_flood_Fill_time_size.csv", fill_time, delimiter=",")
 
 
 if __name__ == '__main__':

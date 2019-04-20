@@ -3,9 +3,9 @@ import numpy as np
 import cv2
 import os
 
-GT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs_gt'
-EFCI_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/EFCI_results'
-SCAN_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Scan_flood_fill_results'
+GT_PATH = 'F:/Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/Imgs_gt'
+EFCI_PATH  = 'F:/Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/EFCI_results'
+SCAN_PATH = 'F:/Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/Scan_flood_Fill_results'
 
 def evaluation_details(gtPath, scanPath, efciPath):
     gt = cv2.imread(gtPath, 0)
