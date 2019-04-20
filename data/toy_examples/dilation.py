@@ -2,8 +2,8 @@ import numpy as np
 import cv2
 import os
 
-INPUT_PATH = 'F:/Scan-flood-Fill/data/ toy_examples/ input_200'
-OUTPUT_PATH_FILL = 'F:/Scan-flood-Fill/data/ toy_examples/input_toy/'
+INPUT_PATH = 'F:/Scan-flood-Fill/data/toy_examples/ input_200'
+OUTPUT_PATH_FILL = 'F:/Scan-flood-Fill/data/toy_examples/input_toy/'
 colorThreshold = 30
 
 def dilation(inputPath, savePath, boundaryColor, d):
