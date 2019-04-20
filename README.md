@@ -2,12 +2,6 @@
 
 Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 
-<p align="center">
-  <img src="images/Comparison.jpg" width="350" title="hover text">
-  <img src="images/Comparison.jpg" width="350" alt="accessibility text">
-  <img src="images/Comparison.jpg" width="350" alt="accessibility text">
-</p>
-
 ### 1 Requirements
 
 - python 2.7
@@ -45,9 +39,15 @@ Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 
 ​	We record time consumption for both EFCI and Scan-flood Fill and output corresponding .csv files. The corresponding codes are Scan-flood-Fill/filling_algorithms/EFCI_time_size.py and Scan-flood-Fill/filling_algorithms/Scan_flood_fill_time_size.py. The file Scan-flood-Fill/filling_algorithms/Scan_flood_fill_time_size_crop_first.py is the algorithm for Scan-flood-Fill, but it does cropping before the Main Filling Process. The resulting .csv files recording running time are EFCI_time_size.csv and Scan_flood_Fill_time_size.csv. The resulting masks are Scan-flood-Fill/data/toy_examples/output_EFCI_toy and Scan-flood-Fill/data/toy_examples/output_Scan_flood_Fill_toy(Scan-flood-Fill/data/toy_examples/output_Scan_flood_Fill_crop_first_toy for the cropping before Main Filling Process version).
 
- 	A visual result for toy examples is given in the following figure.
+​	A visual result for toy examples is given in the following figure.
 
 ![Alt text](images/Comparison.jpg?raw=true "Title")
+
+​	Time comparison figure is presented here.
+
+<p align="center">
+  <img src="images/time_comparison_regression.jpg" width="350" title="hover text">
+</p>
 
 ​	EFCI code is given below:
 ```python
