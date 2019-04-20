@@ -5,8 +5,8 @@ import os
 from skimage import measure,draw,data,filters,feature
 import matplotlib.pyplot as plt
 
-INPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs_fix'
-OUTPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs_boundary_fix'
+INPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs'
+OUTPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs_boundary'
 colorThreshold = 20
 
 
