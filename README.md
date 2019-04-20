@@ -46,7 +46,7 @@ Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 ​	Time comparison figure is presented here.
 
 <p align="center">
-  <img src="images/time_comparison_regression.jpg" width="350" title="hover text">
+  <img src="images/time_comparison_regression.jpeg" width="350" alt="accessibility text">
 </p>
 
 ​	EFCI code is given below:
