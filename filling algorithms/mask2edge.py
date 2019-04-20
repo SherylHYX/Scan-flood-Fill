@@ -3,7 +3,6 @@ import numpy as np
 import cv2
 import os
 from skimage import measure,draw,data,filters,feature
-import matplotlib.pyplot as plt
 
 INPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs'
 OUTPUT_PATH = 'F:/fill_boundary/MSRA10K_Imgs_GT/MSRA10K_Imgs_GT/Imgs_boundary'
