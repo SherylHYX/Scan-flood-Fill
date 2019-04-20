@@ -248,7 +248,7 @@ def holeFill_main():
 
 ​	Then we test all 9918 images..  For EFCI, we use inputScan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/Imgs_boundary and code Scan-flood-Fill/filling_algorithms/EFCI_MSRA10K.py to obtain output Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/EFCI_results. Similarly, for Scan-flood Fill, we use input Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/Imgs_boundary and code Scan-flood-Fill/filling_algorithms/Scan_flood_fill_MSRA10K.py to obtain output Scan-flood-Fill/data/public_dataset_MSRA10K_Imgs_GT/Scan_flood_Fill_results.
 
-### 7 Discussions
+### 7 Performance evaluation
 
 ​	We also obtain a comparison of quantitative results including F1 score (larger is better) and MAE(Mean Absolute Error, smaller is better), as is given in Table \ref{table:evaluation}. The quantitative results indicate that Scan-flood Fill achieves better performance than EFCI on the given dataset. The difference between them probably lies in the existence of "holes"  within regions to be filled. Besides, since MSRA10K does not provide edge images, and the generating process of edges may result in differences of boundary pixels between ground truth images and generated edge images, it is reasonable that Scan-flood Fill cannot achieve 100 percent accuracy in this case, when compared to GT masks given by the dataset. The Scan-flood Fill results are almost the same as ground truth results, so they can be used as ground truth for supervised learning and would probably not affect training accuracy.
 
