@@ -2,6 +2,10 @@
 
 Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
 
+```
+![Alt text](images/Comparison.jpg?raw=true "Title")
+```
+
 ### 1 Requirements
 
 - python 2.7
@@ -106,8 +110,6 @@ def fillBoundaryMain(imagePath ,savePath):
     filledImg = cropAndReverse(padImg, height, width, 255, 0, 128)
     cv2.imwrite(savePath, filledImg, [int(cv2.IMWRITE_JPEG_QUALITY),100])
 
-
-
 def fillBoundary_main():
     fill_time = np.zeros([10])
     for i, n in enumerate(range(200, 2200, 200)):
@@ -200,6 +202,7 @@ def holesInHoles(imgPath, savePath, backGroundColor, boundaryColor, labelColor, 
 
     resultImg = cropAndReverse(padImg, height, width, backGroundColor, labelColor, fillColor, maskColor)
     cv2.imwrite(savePath, resultImg, [int(cv2.IMWRITE_JPEG_QUALITY), 100])
+    
 def holeFill_main():
     fill_time = np.zeros([10])
     boundaryColor = 255
