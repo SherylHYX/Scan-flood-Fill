@@ -1,6 +1,7 @@
 ## Scan-flood Fill README
 
 Explanations can be seen in our paper: file Scan-flood-Fill/56.pdf.
+If you want to use our code, please cite our paper. This paper is submitted and accpeted for CEFRL 2019, a workshop in conjuction with CVPR, in Long Beach, California, United States.
 
 ### 1 Requirements
 
