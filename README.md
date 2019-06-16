@@ -250,7 +250,7 @@ def holeFill_main():
 
 ​	Flowcharts generated can be seen in paper Scan-flood-Fill/56.pdf, and they are also presented here.
 
-![Alt text](images/flow_EFCI0413.png?raw=true "Title")
+![Alt text](images/flow_EFCI0616.png?raw=true"Title")
 *flow chart for EFCI*
 
 ![Alt text](images/flow_pig0417.png?raw=true "Title")
