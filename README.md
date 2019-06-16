@@ -262,7 +262,7 @@ def holeFill_main():
 
 ​	An example for the practical result is given here.
 
-![Alt text](images/combination of practical.jpg?raw=true "Title")
+![Alt text](images/combination_of_practical.jpg?raw=true "Title")
 
 ​	First we draw some examples for result image in our paper.  For EFCI, we use input Scan-flood-Fill/data/practical_experiment/boundary and code Scan-flood-Fill/filling_algorithms/EFCI_practical_experiment.py to obtain output Scan-flood-Fill/data/practical_experiment/output_EFCI. Similarly, for Scan-flood Fill, we use input Scan-flood-Fill/data/practical_experiment/boundary and code Scan-flood-Fill/filling_algorithms/Scan_flood_fill_practical_experiment.py to obtain output Scan-flood-Fill/data/practical_experiment/output_scan.
 
